@@ -11,10 +11,7 @@ use Illuminate\Http\Request;
 
 class AuthController extends Controller
 {
-    public function __construct(private EmailVerificationService $service)
-    {
-       
-    }
+    public function __construct(private EmailVerificationService $service){}
 
     public function login(LoginRequest $request)
     {
